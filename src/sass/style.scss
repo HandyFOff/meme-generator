@@ -1,0 +1,130 @@
+@import '~normalize.scss';
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+@font-face {
+    font-family: Impact;
+    src: url('../assets/fonts/ImpactRegular.ttf');
+}
+
+body {
+    font-family: Karla;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 717px;
+}
+
+.container-header {
+    margin: 0 auto;
+    max-width: 717px;
+}
+
+.header {
+    padding: 20px 40px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+    &>.container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &>.logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            &>.logo-name {
+                font-family: 'Karla';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 26.7482px;
+                line-height: 24px;
+                letter-spacing: -0.1em;
+            
+                color: #FFFFFF;
+            }
+        }
+        &>.course {
+            &>.course-name {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                line-height: 15px;
+                text-align: right;
+            
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.meme {
+    padding: 40px 40px;
+    display: grid;
+    gap: 30px;
+    &>.meme-form {
+        display: grid;
+        gap: 20px;
+        &>.meme-form__text {
+            display: flex;
+            gap: 30px;
+
+            @media screen and (max-width: 724px) {
+                flex-direction: column;
+            }
+
+            &>input {
+                border: 1px solid #D5D4D8;
+                border-radius: 5px;
+                width: 50%;
+                padding: 13px 0;
+
+                font-family: 'Karla';
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px;
+
+                color: #0D0D0D;
+
+                &::placeholder {
+                    padding-left: 10px;
+                }
+
+                @media screen and (max-width: 724px) {
+                    width: 100%;
+                }
+            }
+        }
+        &>.btn-create__img {
+            background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+            border-radius: 5px;
+            border: 0;
+
+            width: 100%;
+            padding: 20px 0;
+
+            font-family: 'Karla';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: -0.1em;
+
+            color: #FFFFFF;
+
+            // &::after {
+            //     content: url('../assets/img/picture.png');
+            //     width: 20px;
+            //     height: 20px;
+            // }
+        }
+    }
+    &>.meme-image {
+        width: 100%;
+        height: auto;
+    }
+}
