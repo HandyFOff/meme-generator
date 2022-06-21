@@ -151,6 +151,16 @@ body {
                 0 -2px 0 #000,
                 -2px 0 0 #000,
                 2px 2px 5px #000;
+
+                @media (max-width: 600px) {
+                    font-size: 2.2em;
+                }
+                @media (max-width: 475px) {
+                    font-size: 1.7em;
+                }
+                @media (max-width: 375px) {
+                    font-size: 1.2em;
+                }
         }
         
         .bottom {
